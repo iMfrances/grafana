@@ -30,7 +30,7 @@ export const LoginForm: FC<Props> = ({ children, onSubmit, isLoggingIn, password
       <Form onSubmit={onSubmit} validateOn="onChange">
         {({ register, errors }) => (
           <>
-            <Field label="Email or username" invalid={!!errors.user} error={errors.user?.message}>
+            <Field label="idsid without domain" invalid={!!errors.user} error={errors.user?.message}>
               <Input
                 {...register('user', { required: 'Email or username is required' })}
                 autoFocus
@@ -51,6 +51,10 @@ export const LoginForm: FC<Props> = ({ children, onSubmit, isLoggingIn, password
               {isLoggingIn ? 'Logging in...' : 'Log in'}
             </Button>
             {children}
+
+            <a href="https://ags.intel.com/identityiq/accessRequest/accessRequest.jsf#/accessRequestSelf/add">
+              AGS Entitlement &apos;FMTOOL-access&apos; is required!
+            </a>
           </>
         )}
       </Form>
