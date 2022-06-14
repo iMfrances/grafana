@@ -32,7 +32,7 @@ export const LoginForm: FC<Props> = ({ children, onSubmit, isLoggingIn, password
           <>
             <Field label="idsid without domain" invalid={!!errors.user} error={errors.user?.message}>
               <Input
-                {...register('user', { required: 'Email or username is required' })}
+                {...register('user', { required: 'idsid is required' })}
                 autoFocus
                 autoCapitalize="none"
                 placeholder={loginHint}
