@@ -4,11 +4,25 @@
 
 ## Development
 
+- Source Code
+
 ```
 git clone -b cce-fmtool https://github.com/iMfrances/grafana.git
 ```
 
-**Please note we start from the commit below since there are [known issue](https://github.com/nodejs/corepack/pull/69) of yarnpkg**
+- Start Frontend
+
+```
+yarn start
+```
+
+- Start Backend
+
+```
+make run
+```
+
+_Please note we start from the commit below since there are [known issue](https://github.com/nodejs/corepack/pull/69) of yarnpkg_
 
 ```
 commit c2754eb9cc948111e6134e99e599202d2092600a
