@@ -53,7 +53,7 @@ export const LoginForm: FC<Props> = ({ children, onSubmit, isLoggingIn, password
             {children}
 
             <a href="https://ags.intel.com/identityiq/accessRequest/accessRequest.jsf#/accessRequestSelf/add">
-              AGS Entitlement &apos;FMTOOL-access&apos; is required!
+              For access please navigate to AGS and request access to the FMTool-Access role.
             </a>
           </>
         )}
